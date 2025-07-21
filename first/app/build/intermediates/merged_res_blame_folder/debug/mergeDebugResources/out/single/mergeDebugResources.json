@@ -4,10 +4,6 @@
         "source": "com.example.first.app-main-35:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.first.app-debug-33:/mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "com.example.first.app-main-35:/mipmap-anydpi/ic_launcher_round.xml"
-    },
-    {
         "merged": "com.example.first.app-debug-33:/layout_activity_main.xml.flat",
         "source": "com.example.first.app-main-35:/layout/activity_main.xml"
     },
@@ -20,10 +16,6 @@
         "source": "com.example.first.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.first.app-debug-33:/mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "com.example.first.app-main-35:/mipmap-anydpi/ic_launcher.xml"
-    },
-    {
         "merged": "com.example.first.app-debug-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "com.example.first.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
@@ -34,6 +26,10 @@
     {
         "merged": "com.example.first.app-debug-33:/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "com.example.first.app-main-35:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.first.app-debug-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.first.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "com.example.first.app-debug-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -50,6 +46,10 @@
     {
         "merged": "com.example.first.app-debug-33:/xml_backup_rules.xml.flat",
         "source": "com.example.first.app-main-35:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.first.app-debug-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.first.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
         "merged": "com.example.first.app-debug-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
