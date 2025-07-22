@@ -84,7 +84,7 @@ fun main(){
     dict["blue"] = "голубой"
     println(dict["blue"]) // голубой
 }
-*/
+
 class Matrix {
     private val numbers: Array<Array<Int>> = arrayOf(
         arrayOf(1, 2, 4),
@@ -111,4 +111,85 @@ fun main(){
     println(matrix[0, 1]) // 2
     matrix[0, 1] = 32
     println(matrix[0, 1]) // 32
+}
+
+
+open class BaseDate(val year: Int, val month: Int, val day: Int){
+    open fun getFormat(): String {
+        return "год:%d, месяц:%02d, день:%02d".format(year, month, day)
+    }
+}
+
+class AmericanDate(year: Int, month: Int, day: Int): BaseDate(year, month, day){
+    override fun getFormat(): String {
+        return "%02d.%02d.%d".format(month, day, year)
+    }
+
+}
+
+class EuropeanDate(year: Int, month: Int, day: Int): BaseDate(year, month, day){
+    override fun getFormat(): String {
+        return "%02d.%02d.%d".format(day, month, year)
+    }
+}
+
+
+fun main(){
+    val date1 = BaseDate(year = 2021, month = 3, day = 24)
+    val date2 = AmericanDate(year = 2021, month = 3, day=24)
+    val date3 = EuropeanDate(2021, 3, 24)
+    println(date1.getFormat())
+    println(date2.getFormat())
+    println(date3.getFormat())
+}
+
+ */
+
+/*
+open class Summator{
+    fun sum(number: Int): Int {
+        var sum = 0
+        var a: Int
+        for (i in 1..number) {
+            a = i
+            sum += transform(a)
+        }
+        return sum
+    }
+    protected open fun transform(a: Int): Int {
+        return a
+    }
+}
+    class SquareSummator(): Summator(){
+        override fun transform(a: Int): Int {
+            return a * a
+        }
+    }
+    class CubeSummator(): Summator(){
+        override fun transform(a: Int): Int {
+            return a * a * a
+        }
+    }
+
+class PowerSummator(val p: Int): Summator(){
+    override fun transform(a: Int): Int {
+        return Math.pow(a.toDouble(), p.toDouble()).toInt()
+    }
+}
+
+fun main(){
+
+    println(Summator().sum(5))
+    println(SquareSummator().sum(5))
+    println(PowerSummator(3).sum(5))
+}
+*/
+
+class User {
+    var name: String = " "
+}
+
+fun main() {
+    val user = User()
+    user.
 }
