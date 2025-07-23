@@ -1,3 +1,5 @@
+import java.io.File
+
 /*class User(name: String, age: Int) {
     val name: String
     val age: Int
@@ -185,11 +187,8 @@ fun main(){
 }
 */
 
-class User {
-    var name: String = " "
-}
 
-fun main() {
-    val user = User()
-    user.
+fun main(){
+
 }
+   
