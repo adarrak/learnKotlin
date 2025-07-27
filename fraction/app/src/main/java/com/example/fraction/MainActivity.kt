@@ -66,13 +66,13 @@ class Fraction(val numerator: Int, val denomerator: Int){
 }
 
 fun main(){
-    val fraction1 = Fraction(numerator = 8, denomerator = 6)
+    val fraction1 = Fraction(numerator = 7, denomerator = 6)
     val fraction2 = Fraction(numerator = 1, denomerator = 3)
 
     fraction1.sum(fraction2).print()
-    fraction1.difference(fraction2).print()
-    fraction1.multiply(fraction2).print()
-    fraction1.divide(fraction2).print()
-    fraction1.print()
+    //fraction1.difference(fraction2).print()
+    //fraction1.multiply(fraction2).print()
+    //fraction1.divide(fraction2).print()
+    //fraction1.print()
 
 }
