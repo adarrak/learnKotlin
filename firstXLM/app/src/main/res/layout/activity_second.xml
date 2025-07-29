@@ -14,22 +14,24 @@
         android:src="@drawable/ic_close"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="24dp"/>
+        android:layout_marginTop="44dp"
+        android:layout_marginStart="24dp"
+        android:contentDescription="close image button"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvQuestionWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginHorizontal="33dp"
         android:layout_marginTop="66dp"
         android:text="Galaxy"
+        android:fontFamily="@font/nunito_bold"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        tools:text="Galaxy" />
+        tools:text="Galaxy"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -38,7 +40,7 @@
         android:layout_marginHorizontal="33dp"
         android:layout_marginTop="66dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionWord"
         tools:layout_editor_absoluteX="33dp">
 
         <LinearLayout
@@ -62,7 +64,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="18dp"
-                android:text="Сломать" />
+                android:text="Сломать"
+                style="@style/TextViewVariantsStyle"/>
         </LinearLayout>
 
         <LinearLayout
@@ -87,7 +90,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="18dp"
-                android:text="Сон" />
+                style="@style/TextViewVariantsStyle"
+                android:text="Сон"/>
         </LinearLayout>
 
         <LinearLayout
@@ -112,7 +116,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="18dp"
-                android:text="Галактика" />
+                android:text="Галактика"
+                style="@style/TextViewVariantsStyle"/>
         </LinearLayout>
 
         <LinearLayout
@@ -137,7 +142,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="18dp"
-                android:text="Утюг" />
+                android:text="Утюг"
+                style="@style/TextViewVariantsStyle"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -145,7 +151,7 @@
         android:layout_width="310dp"
         android:layout_height="58dp"
         android:backgroundTint="#2574FF"
-        android:text="Skip"
+        android:text="@string/button_skip"
         android:textAllCaps="true"
         android:layout_marginBottom="24dp"
         android:visibility="gone"
@@ -170,12 +176,14 @@
             android:layout_marginTop="18dp"
             android:src="@drawable/ic_correct"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="correct answer icon"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Correct!"
+            android:text="@string/title_correct"
+            android:fontFamily="@font/nunito_regular"
             app:layout_constraintBottom_toBottomOf="@+id/imageView"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="@+id/imageView"
@@ -192,7 +200,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
-            android:text="Continue"
+            android:text="@string/button_continue"
+            android:fontFamily="@font/nunito_bold"
             android:textAllCaps="true"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="24dp"/>
