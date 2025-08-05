@@ -92,3 +92,4 @@ fun showOnConsole(message: String) {
 fun sendEmail(message: String) {
     // отправка на почту
 }
+
